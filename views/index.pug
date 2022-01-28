@@ -1,5 +1,17 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  header
+    h1=title 
+    h2="Watcha got in mind"
+  main
+    .post-btn 
+      a(href="/new")
+        button.compose="Add a post!"
+    each message in messages
+      section.msg-card 
+        h2=message.title 
+        p=message.msg 
+        footer 
+          p=message.user 
+          p=message.added
