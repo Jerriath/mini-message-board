@@ -22,7 +22,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get("/new", (req, res, next) => {
-  res.render("form");
+  res.render("form", { title: "Mini-Messageboard"});
 })
 
 router.post("/new", (req, res, next) => {
@@ -33,7 +33,7 @@ router.post("/new", (req, res, next) => {
     user: contents.user,
     added: new Date()
   }
-  messages.push(newMsg);
+  messages.splice(0, 0, newMsg);
   res.redirect("/");
 })
 

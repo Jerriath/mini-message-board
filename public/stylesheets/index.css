@@ -1,22 +1,8 @@
 /*---------- Table of Contents ----------
-    I.   Index styling
-    II.  Form styling
-    III. CSS reset (Meyer Web)
+    I.   CSS reset (Meyer Web)
+    II.  Index styling
+    III. Form styling
 -----------------------------------------*/
-
-
-
-/*----- Index styling -----*/
-header {
-    
-}
-
-
-
-/*----- Form styling -----*/
-form {
-
-}
 
 
 
@@ -68,4 +54,120 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+
+
+/*----- Index styling -----*/
+header {
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(238, 103, 103);
+    background-color:rgb(30, 246, 253);
+    border-radius: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+header h2 {
+    font-size: 1rem;
+}
+
+main {
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.post-div {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.post-btn {
+    width: 50%;
+    height: 3rem;
+    font-size: 2rem;
+    color: rgb(238, 103, 103);
+    background-color: rgb(30, 246, 253);
+    border: 0;
+    border-radius: 20px;
+    transition: all 0.2s linear;
+}
+
+.post-btn:hover {
+    background-color: rgba(30, 246, 253, 0.7);
+    box-shadow: 3px 3px 3px 3px rgb(136, 136, 136);
+}
+
+.msg-card {
+    border: 3px solid black;
+    width: 60%;
+    margin: 2rem auto;
+    border-radius: 20px;
+    border-color: rgb(30, 246, 253);
+    text-align: left;
+    padding: 0.5rem 1rem;
+}
+
+.msg-card h2 {
+    border-bottom: 1px solid black;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(238, 103, 103);
+    font-weight: bold;
+}
+
+.msg {
+    color:rgb(238, 103, 103);
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+}
+
+footer p{
+    color:rgb(238, 103, 103);
+    font-weight: bold;
+}
+
+
+
+/*----- Form styling -----*/
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+}
+
+form input {
+    font-size: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+form textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5rem;
+    border-radius: 10px;
+    min-height: 200px;
+    margin-bottom: 2rem;
+    border: 1px solid grey;
+}
+
+form button.post-btn {
+    margin: 0 auto;
 }

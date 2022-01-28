@@ -5,13 +5,13 @@ block content
     h1=title 
     h2="Watcha got in mind"
   main
-    .post-btn 
+    .post-div
       a(href="/new")
-        button.compose="Add a post!"
+        button.post-btn.compose="Add a post"
     each message in messages
       section.msg-card 
         h2=message.title 
-        p=message.msg 
+        p.msg=message.msg 
         footer 
           p=message.user 
           p=message.added
